@@ -96,7 +96,8 @@ spec:
           periodSeconds: 2
           timeoutSeconds: 1
       - name: xtrabackup
-        image: gcr.io/google-samples/xtrabackup:1.0
+        #image: gcr.io/google-samples/xtrabackup:1.0 此镜像源已经无法再使用了
+        image：yizhiyong/xtrabackup
         ports:
         - name: xtrabackup
           containerPort: 3307
